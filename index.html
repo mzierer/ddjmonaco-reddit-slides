@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>BR Data</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+					<section><h1>The_Schulz</h1>
+				<img src="img/schulzgif.gif" width="50%" height="50%">
+				<h2>In der Datenanalyse</h2><p>Maximilian Zierer<br>@maxzierer</p>
+				</section>
+			<section>
+				<section>
+				<h2>The_Donald</h2>
+				<p><img src="img/t_d_screenshot.png" width="100%" height="100%">
+				</section>
+				<section>
+				<h2>The_Schulz</h2>
+				<p>
+				<img src="img/t_s_screenshot.png" width="100%" height="100%">
+					
+				</p>
+				</section>
+				
+
+				<section>
+				<h2>Memes...</h2>
+				<p><img src="img/meme1.jpg" width="20%" height="20%">
+				<img src="img/meme2.jpg" width="30%" height="30%">
+				<img src="img/meme3.png" width="20%" height="20%">
+				</p>
+				</section>
+				<section>
+				<h2>...plötzlich im politischen Diskurs...</h2>
+				<p>
+				<img src="img/mega.jpg" width="80%" height="80%">
+				</p>
+				</section>
+				<section>
+				<h2>...und in den Medien</h2>
+				<p><img src="img/spon.png" width="35%" height="35%">
+				<img src="img/zeit.png" width="30%" height="30%">
+				<img src="img/t_t.jpg" width="40%" height="40%"></p>
+				</section>
+
+				</section>
+
+				<section>
+				<section>
+				<h2>PRAW: Reddit analysieren</h2>
+				<p><a href="https://github.com/praw-dev/praw">Python Reddit API Wrapper</a>
+				<p>
+				<pre><code class="hljs" data-trim contenteditable>
+				import praw
+				</code></pre>
+				</p>
+
+				
+				</section>
+
+				<section><h2>Vorhandene Scripte</h2>
+				<ul>
+				<li><a href="https://github.com/peoplma/subredditarchive">subredditarchive</a></li>
+				<li><a href="https://github.com/crisbeto/subreddit-downloader">subreddit-downloader</a></li>
+				<li><a href="https://github.com/NSchrading/redditDataExtractor">redditDataExtractor</a></li>
+				<li>...</li>
+				</ul>
+				</section>
+				<section>
+				<h2>Eigenes Script: Subreddit-CSV</h2>
+				<ul>
+				<li>Welches Subreddit?</li>
+				<li>Welcher Zeitraum?</li>
+				<li>Posts als -> CSV</li>
+				</ul>
+				</section>
+				<section>
+					<h2>Action</h2>
+					<p>
+					<img src="img/reddit1.gif" width="100%" height="100%">
+					</p>
+				</section>
+				<section>
+				<h2>Ergebnis: CSV</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+				Post,Timestamp,Day,Author,Score,Shortlink,Domain,Upvotes,Downvotes
+Niedrige energie...,2017-03-07T02:10:51Z,2017-03-07,DankmemesSPD,413,https://redd.it/5xusdn,i.redd.it,413,0
+"Hohe Energie in NRW, aber leider immer noch zu viel blaue Bremskraft. Ampelkoalition maybe?",2017-03-07T02:51:38Z,2017-03-07,Asoziales-Netzwerk,127,https://redd.it/5xv1l8,i.reddituploads.com,127,0
+Hohe Energie auch auf SoundCloud MEGA,2017-03-07T00:44:33Z,2017-03-07,Janik6,45,https://redd.it/5xu90u,soundcloud.com,45,0
+Für 30EUR im Jahr kann man Gastmitglied bei der Partei des Gottkanzlers werden!,2017-03-07T20:35:10Z,2017-03-07,AlexHessen,41,https://redd.it/5y02jv,spd.de,41,0
+				</code></pre>
+				</section>
+				<section>
+				<h2>Ergebnis in Excel</h2>
+				<img src="img/excel.png" width="90%" height="90%">
+
+				</section>
+				<section>
+					<h2>Posts pro User</h2>
+				<img src="img/posts-pro-user.png">
+				</section>
+				<section>
+					<h2>Der The_Schulz-Hypecycle</h2>
+				<img src="img/schulz_vorschlag.png">
+				</section>
+				<section>
+					<h2>Veröffentlichung</h2>
+				<img src="img/schulz_puls.jpg">
+				</section>
+				<section>
+					<h2>Reaktionen</h2>
+				<img src="img/reddit-reax.png">
+				</section>
+				<section>
+					<h2>Reaktionen</h2>
+				<img src="img/bento.png" width="80%" height="80%">
+				</section>
+			</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
